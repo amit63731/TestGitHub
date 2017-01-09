@@ -1,0 +1,9 @@
+   {% if signups.count > 0 %}
+   {% for signup in signups %}
+   <li><a href="">{{ signup.first_name|capfirst}}</a></li>
+   {% endfor %}
+
+   {% else %}
+
+  <li>None to show </li>
+  {% endif %} 
